@@ -13,9 +13,9 @@ export class HeaderComponent implements OnInit {
     title: '{LawBot}',
     menus: [{
       title: '首页', url: '/'
-    },{
+    }/**,{
       title: '产品', url: '/#/product'
-    },{
+    } */,{
       title: 'AI案件分析', url: '/reco/#/',
       subMenus: [
         {title: '民间借贷', url: '/reco/#/mjjd'},

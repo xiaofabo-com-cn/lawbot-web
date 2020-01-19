@@ -5,10 +5,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4203 --proxy-config proxy.conf.json --host 127.0.0.1 --base-href=/contract/",
+    "dev": "ng serve --port 4203 --base-href=/contract/",
     "build": "ng build --prod --base-href=/contract/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:zip": "npm run build && zip -r lawbot-case-contract-ui.zip ./dist"
   },
   "private": true,
   "dependencies": {

@@ -1,3 +1,4 @@
+<!--
 <div class="main">
   <div class="container">
     <div class="row">
@@ -6,7 +7,139 @@
           <input type="text"  class="form-control input-lg"  id="name"  placeholder="请输入搜索关键词">
         </div>
         <button type="submit" class="btn btn-primary col-md-1 col-xs-1 col-sm-1 input-lg">检索</button>
-        </div><!-- 表单结束 -->
+        </div>
     </div>
+  </div>
+</div> 
+-->
+
+<div class="container container-home">
+  <div class="swiper-wrap">
+    <swiper [config]="swiperConfig" [(index)]="swiperIndex" (indexChange)="onIndexChange($event)">
+      <div class="text-center" (click)="handleClick()">
+        <div class="swiper-item-img" style="background-image:url(assets/images/swiper/1.png)"></div>
+      </div>
+      <div class="text-center" (click)="handleClick()">
+        <div class="swiper-item-img" style="background-image:url(assets/images/swiper/2.jpeg)"></div>
+      </div>
+      <div class="text-center" (click)="handleClick()">
+        <div class="swiper-item-img" style="background-image:url(assets/images/swiper/3.jpeg)"></div>
+      </div>
+      <div class="text-center" (click)="handleClick()">
+        <div class="swiper-item-img" style="background-image:url(assets/images/swiper/4.jpeg)"></div>
+      </div>
+      <div class="text-center" (click)="handleClick()">
+        <div class="swiper-item-img" style="background-image:url(assets/images/swiper/5.jpeg)"></div>
+      </div>
+    </swiper>
+  </div>
+  <div class="product-wrap">
+    <!-- 产品介绍 -->
+    <div class="product-item row clearfix">
+      <div class="col-md-7 col-xs-7 col-sm-7 column ">
+        <div class="jumbotron">
+          <h4>公司介绍</h4>
+          <p style="color:#666666;font-size:17px;">
+            我们是由敢于创新的法律人和一流的AI专家组成的法律科技团队。<br>
+            我们的理想是打造未来4.0版的法律AI系统。<br>
+            我们深信未来的法律={{'{'}}互联网+大数据+AI{{'}'}}，它将使法律更精准、更高效。
+          </p>
+        </div>
+      </div>
+      <div class="col-md-5 col-xs-5 col-sm-5 column">
+        <!-- <img class="max-w-100" src="assets/images/adju_p1.png"> -->
+      </div>
+    </div>
+    <!-- 案件分析 -->
+    <div class="product-item">
+      <!-- AI案件分析 -->
+      <div class="row clearfix">
+        <div class="col-md-7 col-xs-7 col-sm-7 column ">
+          <div class="jumbotron">
+            <h4>
+              AI案件分析
+            </h4>
+            <p style="color:#666666;font-size:17px;">
+              利用自然语言处理、机器学习和深度学习技术，在海量的法律、法规和案例中搜索和用户输入的案件具有高度相关性的法律、法规和案例，同时对各种“关键因素”进行分析，用BI可视化形式展示给用户，帮助用户快速掌握案件要点，并通过人工智能决策模型对案件进行分析、推理和预测案件结果。
+            </p>
+          </div>
+        </div>
+        <div class="col-md-5 col-xs-5 col-sm-5 column">
+          <img class="max-w-100" src="assets/images/1.png">
+        </div>
+      </div>
+      <!-- 中国海事案件智能分析 -->
+      <div class="mt-20 row clearfix">
+        <div class="col-md-7 col-xs-7 col-sm-7 column ">
+          <div class="jumbotron">
+            <h4>
+              中国海事案件智能分析
+            </h4>
+            <p style="color:#666666;font-size:17px;">系统提供功能：<br>
+              1. 海事案件查询；<br>
+              2. 统计某年度各海事法院案件数量情况、案件类型构成以及发展趋向图；<br>
+              3. 典型案例、格式合同文本分析；<br>
+              4. 国际公约，法律法规查询。
+            </p>
+
+          </div>
+        </div>
+        <div class="col-md-5 col-xs-5 col-sm-5 column">
+          <img class="max-w-100" src="assets/images/3.png">
+        </div>
+      </div>
+    </div>
+    <!-- 法律Chatbot -->
+    <div class="product-item row clearfix">
+      <div class="col-md-7 col-xs-7 col-sm-7 column ">
+        <div class="jumbotron">
+          <h4>
+            法律Chatbot
+          </h4>
+          <p style="color:#666666;font-size:17px;">
+            这是一个法律问答机器人，向用户提供法律自助咨询服务。法律Chatbot的目标是让每个法律服务机构拥有自己的“Siri”。
+            目前深圳国际仲裁院已经在微信公众号上安装了我们开发的仲裁问答机器人“3i”由机器人回答与仲裁相关的各种问题，并为用户提供仲裁指引。</p>
+
+        </div>
+      </div>
+      <div class="col-md-5 col-xs-5 col-sm-5 column">
+        <img class="max-w-100" src="assets/images/2.png">
+      </div>
+
+    </div>
+    <!-- AI裁决书 -->
+    <div class="product-item row clearfix">
+      <div class="col-md-7 col-xs-7 col-sm-7 column ">
+        <div class="jumbotron">
+          <h4>AI裁决书</h4>
+          <p style="color:#666666;font-size:17px;">
+            让机器代替人工，自动撰写裁决书；<br>
+            减轻人工撰写裁决书的工作量，取代重复性劳动；<br>
+            降低成本，提高效率；<br>
+            实现仲裁裁决的标准化、规范化。</p>
+        </div>
+      </div>
+      <div class="col-md-5 col-xs-5 col-sm-5 column">
+        <img class="max-w-100" src="assets/images/adju_p1.png">
+      </div>
+    </div>
+    <!-- AI合同审核 -->
+    <div class="product-item row clearfix">
+      <div class="col-md-7 col-xs-7 col-sm-7 column ">
+        <div class="jumbotron">
+          <h4>
+            AI合同审核
+          </h4>
+          <p style="color:#666666;font-size:17px;">
+            将自然语言处理，机器学习，和其他人工智能技术应用到合同审核和合同起草，例如：分析风险、提示合同中的关键因素。</p>
+
+        </div>
+      </div>
+      <div class="col-md-5 col-xs-5 col-sm-5 column">
+        <img class="max-w-100" src="assets/images/4.png">
+      </div>
+
+    </div>
+
   </div>
 </div>

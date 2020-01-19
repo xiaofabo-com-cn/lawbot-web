@@ -5,10 +5,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4201 --proxy-config proxy.conf.json --host 127.0.0.1 --base-href=/reco/",
+    "dev": "ng serve --port 4201 --base-href=/reco/",
     "build": "ng build --prod --base-href=/reco/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:zip": "npm run build && zip -r lawbot-case-reco-ui.zip ./dist"
   },
   "private": true,
   "dependencies": {
@@ -25,8 +27,8 @@
     "core-js": "^2.4.1",
     "echarts": "^4.1.0",
     "jquery": "^3.3.1",
-    "ngx-bootstrap": "^3.0.1",
-    "ngx-echarts": "^2.2.0",
+    "ngx-bootstrap": "3.0.1",
+    "ngx-echarts": "2.2.0",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },

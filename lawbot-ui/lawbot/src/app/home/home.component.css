@@ -10,3 +10,39 @@
     height: 4rem;
     font-size: 1.88rem;
 }
+
+.max-w-100 {
+    max-width: 100%;
+}
+
+.container-home {
+    /* min-width: 1000px; */
+}
+.div-center {
+    margin: 0 auto;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.swiper-wrap {
+    margin-top: 20px;
+
+}
+.product-wrap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 280px;
+}
+.product-wrap .jumbotron {
+    margin-bottom: 0;
+    height: 100%;
+}
+.product-wrap .product-item:not(:first-child) {
+    margin-top: 20px;
+}
+.swiper-item-img {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

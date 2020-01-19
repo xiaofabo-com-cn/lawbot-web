@@ -13,6 +13,17 @@ import { ProductComponent } from './buss/product/product.component';
 import { AdjuComponent } from './buss/adju/adju.component';
 import { AboutComponent } from './buss/about/about.component';
 
+
+import { SwiperModule } from 'ngx-swiper-wrapper';
+import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+
+const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
+  direction: 'horizontal',
+  slidesPerView: 'auto',
+  // autoplay: true,
+};
+
 const appRoutes: Routes = [
   {
     path: 'product', component: ProductComponent
@@ -46,9 +57,14 @@ const appRoutes: Routes = [
         useHash: true 
       } 
     ),
+    SwiperModule,
   ],
   providers: [
-    UserService
+    UserService,
+    {
+      provide: SWIPER_CONFIG,
+      useValue: DEFAULT_SWIPER_CONFIG
+    }
   ],
   bootstrap: [AppComponent]
 })
